@@ -1,0 +1,395 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+     font-family: "Montserrat", sans-serif;
+     background-color: black;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    height: 2.9rem;
+}
+
+
+/* LEFT SIDE NAVBAR CONTENT*/
+.logo{
+    font-size: 2.3rem;
+    transition: 0.2s;
+}
+.logo:hover{
+    color: green;
+    transform: scale(1.06);
+    justify-content: center;
+}
+
+/* CENTER SIDE NAVBAR CONTENT*/
+.left-side-nav{
+    gap: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+.home{
+    font-size: 1.4rem;
+    background-color: grey;
+    border-radius: 50%;
+    padding: 0.22rem;
+    transition: 0.2s;
+}
+.home:hover{
+    color: white;
+    background-color: green;
+    transform: scale(1.06);
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    width: 16rem;
+    height: 2.2rem;
+    background-color: rgb(211, 209, 209);
+    border-radius: 1.2rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+.search-icon{
+    color: #414040;
+}
+.input-box{
+    color: green;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 0.5rem;
+    border-right: 1px solid #070606;
+    height: 0.4rem;
+}
+.folder{
+    margin-left: 0.4rem;
+    transition: 0.2s;
+}
+.folder:hover{
+    color: green;
+    transform: scale(1.06);
+}
+
+/*RIGHT SIDE NAVBAR CONTENT*/
+.right-side-nav{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.nav-list{
+    transition: 0.2s;
+    
+}
+.nav-list:hover{
+    color: green;
+    transform: scale(1.06);
+    
+}
+.install{
+    border-left: 2px solid #000000;
+    padding-left: 0.8rem;
+    transition: 0.2s;
+}
+.install:hover{
+    color: green;
+    transform:scale(1.06);
+}
+.signup{
+    transition: 0.2s;
+}
+.signup:hover{
+    color: green;
+    transform:scale(1.06);
+}
+.login{
+    background-color: grey;
+    padding: 0;
+    margin: 0.45rem;
+    height: 2.4rem;
+    width: 4.8rem;
+    font-weight: 700;
+    border-radius: 1.2rem;
+    color: black;
+    border: none;
+    transition: 0.2s;
+}
+.login:hover {
+    color: white;
+    background-color: green;
+    transform:scale(1.06);
+}
+
+/*==============================================
+ MAIN SECTION
+ ===============================================*/
+ .main{
+    color: white; 
+    display: flex;
+    background-color: black;
+    gap: 0.3rem;
+    min-height: 78vh;
+    margin-top: 0.1%;
+ }
+
+/* LEFT MAIN SECTION*/
+.left-main-section{
+    background-color: #1d1d1d;
+    padding: 0.8rem;
+    width: 25vw;
+}
+.library{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 1.5rem;
+    font-weight: 700;
+}
+.create{
+    cursor: pointer;
+    display: flex;
+    background-color: grey;
+    padding: 0.6rem;
+    height: 0.5rem;
+    align-items: center;
+    border-radius: 3rem;
+    transition: 0.2s;
+}
+.create:hover{
+    background-color: green;
+    transform: scale(1.06);
+}
+
+.containers{
+   background-color: rgb(46, 45, 45);
+   margin: 0.4rem;
+   width: 94%;
+   height: 22%;
+   padding: 0.5rem;
+   align-items: center;
+   border-radius: 0.6rem;
+}
+.create-playlist{
+    color: black;
+    background-color: white;
+    margin: 0.5rem;
+    padding: 0.3rem;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.4rem;
+    border: none;
+    transition: 0.2s;
+}
+.create-playlist:hover{
+    color: white;
+    background-color: green;
+    transform: scale(1.06);
+
+}
+
+
+/* RIGHT MAIN SECTION*/
+.right-main-section{
+    width: 73vw;
+    padding: 0.8rem;
+    background-color: #1d1d1d;
+}
+.right-main-section h2{
+    font-size: 1.2rem;
+}
+.trending-cards{ 
+    display: flex;
+    margin: 0.5rem;
+    overflow-x: auto;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.cards{
+    padding: 0.25rem;   
+}
+.cards img{
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+.cards h3{
+    font-size: 0.9rem;
+}
+.cards p{
+    font-size: 0.7rem;
+    padding: 0.3rem;
+    color: rgb(221, 220, 220);
+    transform: 0.2s;
+}
+.cards:hover{
+    display: flex;
+    background-color: green;
+    border-radius: 0.5rem;
+    
+}
+
+/* POPULAR SONGS SECTION*/
+.popular-artist-title{
+    display: flex;
+}
+.popular-artist{
+    display: flex;
+    margin: 0.5rem; 
+}
+.popular-cards{
+    transition:0.2s;
+}
+.popular-cards h3{
+    font-size: 0.9rem;
+}
+.popular-cards p{
+     font-size: 0.7rem;
+    padding: 0.3rem;
+    color: rgb(221, 220, 220);
+    transform: 0.2s;
+}
+.popular-cards img{
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 0.3rem;
+}
+.popular-cards:hover{
+    background-color: green;
+    border-radius: 0.8rem;
+    transform: scale(1.06);
+}
+
+/* TRENDING ALBUMS*/
+.trending-albums-title h2{
+    display: flex;
+    margin: 0.5rem;
+}
+.trending-albums{
+    display: flex;
+}
+.trending-albums-cards{
+    transition: 0.2s;
+}
+.trending-albums-cards:hover{
+    background-color: green;
+    border-radius: 0.8rem;
+    transition:scale(0.2);
+}
+.album-title{
+    font-size: 0.9rem;
+}
+.trending-albums-cards p{
+     font-size: 0.7rem;
+    padding: 0.3rem;
+    color: rgb(221, 220, 220);
+    transform: 0.2s;
+}
+.trending-albums-cards img{
+    width: 10rem;
+    height: 10rem;
+    padding: 0.3rem;
+    object-fit: cover;
+    border-radius: 0.8rem;
+}
+    
+/* LIBRARY LINKS*/
+.links-container{
+    bottom: 0;
+}
+.library-links{
+    display: flex;
+    flex-wrap: wrap;
+}
+.links{
+    cursor: pointer;
+    margin: 0.5rem;
+    color: rgb(221, 220, 220);
+    transform: 0.2s;
+}
+.links:hover{
+    color: white;
+    align-items: center;
+    transition: scale(0.2);
+}
+.language-btn{
+    margin: 0.5rem;
+    padding: 0.3rem;
+    border-radius: 1.5rem;
+    border: 1px solid white;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    transform: 0.2s;
+}
+.language-btn:hover{
+    background-color: green;
+    transition: scale(0.2);
+}
+.cookies{
+    display: flex;
+    padding: 0.6rem;
+}
+/* PLAYER SECTION*/
+
+
+/*=================================================
+  MEDIA QUERIES FOR MOBILE DEVICES
+=================================================*/
+@media all and (max-width: 600px){
+    nav{
+        background-color: yellow;
+        height: 6rem;
+        align-items: center;
+        text-decoration: underline;
+        justify-content: space-between;
+    }
+    .search-bar{
+        display: none;
+    }
+    .home{
+        display: none;
+    } 
+    .install{
+        display: none;
+    }
+    .left-main-section{
+        display: none;
+    }
+    .right-main-section{
+        align-items: center;
+    }
+    .right-main-section h2{
+        margin-left: 10rem;
+    }
+    .trending-cards{
+        justify-content: space-evenly;;
+        align-items: center;
+        
+    }
+    .popular-artist{
+
+    }
+    .trending-albums{
+        
+    }
+}
+
+    /*=================================================
+  MEDIA QUERIES FOR TABLET DEVICES
+=================================================*/
+@media all and (min-width: 601px) and (max-width: 1024px){
+    nav{
+        background-color: green;
+    }
+}
