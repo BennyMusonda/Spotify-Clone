@@ -1,8 +1,9 @@
+/* GLOBAL STYLES */
 *{
     padding: 0;
     margin: 0;
-}
 body{
+    height: 100%; 
      font-family: "Montserrat", sans-serif;
      background-color: black;
 }
@@ -126,9 +127,7 @@ nav{
     transform:scale(1.06);
 }
 
-/*==============================================
- MAIN SECTION
- ===============================================*/
+/* MAIN SECTION*/
  .main{
     color: white; 
     display: flex;
@@ -142,7 +141,7 @@ nav{
 .left-main-section{
     background-color: #1d1d1d;
     padding: 0.8rem;
-    width: 25vw;
+    width: 27vw;
 }
 .library{
     display: flex;
@@ -196,7 +195,7 @@ nav{
 
 /* RIGHT MAIN SECTION*/
 .right-main-section{
-    width: 73vw;
+    width: 98vw;
     padding: 0.8rem;
     background-color: #1d1d1d;
 }
@@ -206,13 +205,10 @@ nav{
 .trending-cards{ 
     display: flex;
     margin: 0.5rem;
-    overflow-x: auto;
-    overflow: hidden;
-    max-width: 100%;
+    flex-wrap: wrap;
 }
-
 .cards{
-    padding: 0.25rem;   
+    padding: 0.25rem;
 }
 .cards img{
     width: 10rem;
@@ -230,10 +226,9 @@ nav{
     transform: 0.2s;
 }
 .cards:hover{
-    display: flex;
     background-color: green;
-    border-radius: 0.5rem;
-    
+    border-radius: 0.8rem;
+    transform: scale(1.06);
 }
 
 /* POPULAR SONGS SECTION*/
@@ -340,13 +335,36 @@ nav{
     display: flex;
     padding: 0.6rem;
 }
-/* PLAYER SECTION*/
 
+/* PLAYER SECTION*/
+.player-section{
+    display: flex;
+}
+.player-bar{
+    display: flex;
+    color: white;
+}
+.player-bar img{
+    width: 6rem;
+    height: 6rem;
+    margin: 1.2rem;
+}
+.player-title{
+    font-weight: 700;
+}
+.player-description{
+    color: #bbb;
+}
+.player-controls{
+    display: flex;
+}
 
 /*=================================================
-  MEDIA QUERIES FOR MOBILE DEVICES
+  MEDIA QUERIES FOR NAVIGATION BAR
 =================================================*/
 @media all and (max-width: 600px){
+
+/* NAVIGATION BAR*/
     nav{
         background-color: yellow;
         height: 6rem;
@@ -359,37 +377,55 @@ nav{
     }
     .home{
         display: none;
-    } 
+    }
     .install{
         display: none;
     }
+
+/*=================================================
+   MAIN SECTION
+   ===============================================*/
+
+/* LEFT SECTION*/
     .left-main-section{
         display: none;
     }
+
+/* RIGHT SECTION*/
     .right-main-section{
         align-items: center;
     }
     .right-main-section h2{
         margin-left: 10rem;
     }
+
+
     .trending-cards{
         justify-content: space-evenly;;
         align-items: center;
-        
+        flex-wrap: wrap;
     }
+    .cards img{
+        height: 7rem;
+        width: 7rem;
+    }
+
+
     .popular-artist{
-
+        align-items: center;
+        flex-wrap: wrap;
     }
+    .popular-cards img{
+        height: 6.4rem;
+        width: 6.4rem;
+    }
+
+
     .trending-albums{
-        
+        flex-wrap: wrap;
+        align-items: center;
     }
-}
-
-    /*=================================================
-  MEDIA QUERIES FOR TABLET DEVICES
-=================================================*/
-@media all and (min-width: 601px) and (max-width: 1024px){
-    nav{
-        background-color: green;
+    .trending-albums-cards img{
+        height: 7rem;
+        width: 7rem;
     }
-}
