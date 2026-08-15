@@ -337,27 +337,7 @@ nav{
 }
 
 /* PLAYER SECTION*/
-.player-section{
-    display: flex;
-}
-.player-bar{
-    display: flex;
-    color: white;
-}
-.player-bar img{
-    width: 6rem;
-    height: 6rem;
-    margin: 1.2rem;
-}
-.player-title{
-    font-weight: 700;
-}
-.player-description{
-    color: #bbb;
-}
-.player-controls{
-    display: flex;
-}
+
 
 /*=================================================
   MEDIA QUERIES FOR NAVIGATION BAR
