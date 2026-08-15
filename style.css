@@ -338,6 +338,54 @@ nav{
 
 /* PLAYER SECTION*/
 
+.music-section{
+    background-color: black;
+    position: sticky;
+    height: 15%;
+    bottom: 0;
+}
+.playing-now{
+    display: flex;
+    align-items: center;
+}
+.playing-song{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.playing-now img{
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-top: 0.25rem;
+}
+.song-details{
+    padding: 0.6rem;
+}
+.music-title{
+    font-weight: 700;
+}
+.music-description{
+    padding-top: 0.5rem;
+    color:#bbb;
+    font-size: 0.6rem;
+    font-weight: 600;
+}
+.player-controls{
+    
+}
+.music-control{
+    display: flex;
+    gap: 2rem;
+    font-size: 1rem;
+}
+.music-reaction{
+    display: flex;
+    margin: 1.5rem;
+    gap: 0.3rem;
+    font-size: 1.4rem;
+}
+
 
 /*=================================================
   MEDIA QUERIES FOR NAVIGATION BAR
