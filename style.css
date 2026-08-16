@@ -195,7 +195,7 @@ nav{
 
 /* RIGHT MAIN SECTION*/
 .right-main-section{
-    width: 98vw;
+    width: 77vw;
     padding: 0.8rem;
     background-color: #1d1d1d;
 }
@@ -205,7 +205,8 @@ nav{
 .trending-cards{ 
     display: flex;
     margin: 0.5rem;
-    flex-wrap: wrap;
+    overflow-x: auto;
+    overflow: hidden;
 }
 .cards{
     padding: 0.25rem;
@@ -246,7 +247,7 @@ nav{
     font-size: 0.9rem;
 }
 .popular-cards p{
-     font-size: 0.7rem;
+    font-size: 0.7rem;
     padding: 0.3rem;
     color: rgb(221, 220, 220);
     transform: 0.2s;
@@ -274,6 +275,7 @@ nav{
 }
 .trending-albums-cards{
     transition: 0.2s;
+    margin-bottom: 0.9rem;
 }
 .trending-albums-cards:hover{
     background-color: green;
@@ -284,7 +286,7 @@ nav{
     font-size: 0.9rem;
 }
 .trending-albums-cards p{
-     font-size: 0.7rem;
+    font-size: 0.7rem;
     padding: 0.3rem;
     color: rgb(221, 220, 220);
     transform: 0.2s;
@@ -337,7 +339,6 @@ nav{
 }
 
 /* PLAYER SECTION*/
-
 .music-section{
     background-color: black;
     position: sticky;
@@ -414,6 +415,15 @@ nav{
    MAIN SECTION
    ===============================================*/
 
+   /* MAIN SECTION*/
+   .main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    width: 100%;
+   }
+   
+
 /* LEFT SECTION*/
     .left-main-section{
         display: none;
@@ -429,9 +439,7 @@ nav{
 
 
     .trending-cards{
-        justify-content: space-evenly;;
-        align-items: center;
-        flex-wrap: wrap;
+        display: flex;
     }
     .cards img{
         height: 7rem;
@@ -441,19 +449,35 @@ nav{
 
     .popular-artist{
         align-items: center;
-        flex-wrap: wrap;
+        overflow-x: auto;
+        overflow: hidden;
     }
     .popular-cards img{
-        height: 6.4rem;
-        width: 6.4rem;
+        height: 7rem;
+        width: 7rem;
     }
 
 
     .trending-albums{
-        flex-wrap: wrap;
+        overflow-x: auto;
+        overflow: hidden;
         align-items: center;
     }
     .trending-albums-cards img{
         height: 7rem;
         width: 7rem;
+    }
+    .music-section{
+        background-color: yellow;
+        color: black;
+    }
+    .music-description{
+        color: black;
+        font-weight: 700;
+    }
+    .playing-now img{
+        height: 6.5rem;
+        width: 6.5rem;
+        padding: 0;
+        margin: 0.29rem;
     }
