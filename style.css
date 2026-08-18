@@ -415,12 +415,27 @@ nav{
      color: green;
 }
 .play{
-    background-color: rgb(36, 36, 36);
+    background-color: black;
+    border: none;
+    color: white;
     border-radius: 50%;
     font-size: 40px;
     transition: 0.2s;
 }
 .play:hover{
+    color:green;
+    background-color: black;
+}
+.pause{
+    display: none;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    font-size: 40px;
+    transition: 0.2s;
+}
+.pause:hover{
     color:green;
     background-color: black;
 }
