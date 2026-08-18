@@ -561,35 +561,48 @@ nav{
         flex-wrap: wrap;
     }
     .cards img{
-        height: 7rem;
-        width: 7rem;
+        justify-content: center;
+        display: flex;
+        height: 5rem;
+        width: 5rem;
+        margin: 4px;
     }
 
 
     .popular-artist{
+        justify-content: center;
         align-items: center;
         flex-wrap: wrap;
     }
     .popular-cards img{
-        height: 6.4rem;
-        width: 6.4rem;
+        justify-content: center;
+        height: 5rem;
+        width: 5rem;
+        margin: 4px;
     }
 
 
     .trending-albums{
+        justify-content: center;
         flex-wrap: wrap;
         align-items: center;
     }
     .trending-albums-cards img{
-        height: 7rem;
-        width: 7rem;
+        height: 5rem;
+        width: 5rem;
+        margin: 4px;
     }
 
     /* PLAYER SECTION*/
     .music-section{
         height: 10rem;
-        width: 81vw;
+        width: 100vw;
         justify-content: center;
+        align-items: center;
+        display: flex;
+        position: sticky;
+        bottom: 0;
+        background-color: black;
     }
     .media-artwork{
         display: none;
