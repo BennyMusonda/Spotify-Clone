@@ -239,6 +239,14 @@
 
         <!-- PLAYER SECTION-->
          <div class="music-section">
+
+            <!-- AUDIO FILES-->
+             <div class="audio-files" id="audioFiles">
+                <audio id="audio_1" src="audio/audio_1.mp3"></audio>
+                <audio id="audio2" src="audio/audio_2.mp3"></audio>
+                <audio id="audio3" src="audio/audio_3.mp3"></audio>
+             </div>
+             
             <!-- MEDIA ARTWORK-->
             <div class="media-artwork">
                 <img src="imgs/playingsong.PNG" alt="playing song">
@@ -255,7 +263,8 @@
                 <div class="player-icons">
                     <div class="shuffle"><i class="fa-solid fa-shuffle"></i></div>
                     <div class="back"><i class="fa-solid fa-backward-step"></i></div>
-                    <div class="play"><i class="fa-solid fa-circle-play"></i></div>
+                    <button class="play" id="playBtn" ><i class="fa-solid fa-circle-play" id="playIcon"></i></button>
+                    <button class="pause" id="pauseBtn" ><i class="fa-solid fa-circle-pause"></i></button>
                     <div class="next"><i class="fa-solid fa-forward-step"></i></div>
                     <div class="loop"><i class="fa-solid fa-repeat"></i></div>
                 </div>
@@ -276,5 +285,6 @@
                 </div>
               </div>
          </div>
+         <script src="script.js" defer></script>
 </body>
 </html>
