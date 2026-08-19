@@ -344,6 +344,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     position: sticky;
+    width: 100%;
 }
 
 /* MEDIA ARTWORK*/
@@ -447,13 +448,20 @@ nav{
 .next:hover{
      color: green;
 }
-.loop{
+.repeat{
+    background-color: black;
+    border: none;
     color: #8b8b8b;
     font-size: 18px;
     transition: 0.2s;
+    cursor: pointer;
 }
-.loop:hover{
+.repeat:hover{
     color: green;
+}
+.repeat:active{
+    color: yellow;
+    transform: scale(1.1);
 }
 .progress-bar{
     display: flex;
@@ -463,6 +471,15 @@ nav{
     accent-color: green;
     height: 4px;
     border-radius: 5rem;
+}
+.progressbar-time{
+    display: flex;
+    align-items: center;
+}
+.duration{
+    color: green;
+    display: flex;
+    align-items: center;
 }
 
 /* MEDIA CONTROL*/
