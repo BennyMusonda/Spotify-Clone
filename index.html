@@ -266,9 +266,15 @@
                     <button class="play" id="playBtn" ><i class="fa-solid fa-circle-play" id="playIcon"></i></button>
                     <button class="pause" id="pauseBtn" ><i class="fa-solid fa-circle-pause"></i></button>
                     <div class="next"><i class="fa-solid fa-forward-step"></i></div>
-                    <div class="loop"><i class="fa-solid fa-repeat"></i></div>
+                    <button class="repeat" id="repeat"><i class="fa-solid fa-repeat"></i></button>
                 </div>
-                <input class="progress-bar" id="progressBar" type="range" min="0" max="100" value="0">
+                <div class="progressbar-time">
+                    <time class="current-time" id="currentTime" datetime="PT0S">0:00</time>
+                   <input class="progress-bar" id="progressBar" type="range" min="0" max="100" value="0">
+                   <time class="duration" id="duration" datetime="PT0S">0:00</time>
+                 
+                </div>
+                
              </div>
 
              <!-- MEDIA CONTROL-->
