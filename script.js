@@ -60,3 +60,20 @@ return `${mins}:${paddedSecs}`;
 
 //----------------------- VOLUME BAR AND ITS INTERACTIONS---------------------//
 
+//GETTING REFERENCES FROM THE HTML ELEMENT
+const volumeSlider = document.getElementById('mediaVolume');
+const volumeValue = document.getElementById('volumeValue');
+const myMedia = document.getElementById('audio_1');
+
+volumeSlider.addEventListener('input', (event) => {
+  const currentVolume = event.target.value;
+  
+  // SHOWS THE CURRENT VOLUME NUMBER
+  volumeValue.textContent = currentVolume;
+  
+  // SETS THE MEDIA VOLUME
+  if (myMedia) {
+    myMedia.volume = currentVolume / 100;
+  }
+});
+
