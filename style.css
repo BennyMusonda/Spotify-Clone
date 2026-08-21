@@ -199,27 +199,9 @@ nav{
     width: 98vw;
     padding: 0.8rem;
     background-color: #1d1d1d;
-    position: relative;
 }
 .right-main-section h2{
     font-size: 1.2rem;
-}
-.main-play-button{
-    color: white;
-    background-color: green;
-    width: 3rem;
-    height: 3rem;
-    display: flex;
-    border-radius: 50%;
-    font-size: 3rem;
-    position: absolute;
-    top: 0.8rem;
-    right: 0.8rem;
-    z-index: 1;
-}
-.main-play-button:hover{
-    color: green;
-    background-color: black;
 }
 .trending-cards{ 
     display: flex;
@@ -228,7 +210,6 @@ nav{
 }
 .cards{
     padding: 0.25rem;
-    position: relative;
 }
 .cards img{
     width: 10rem;
@@ -250,7 +231,6 @@ nav{
     border-radius: 0.8rem;
     transform: scale(1.06);
 }
-
 
 /* POPULAR SONGS SECTION*/
 .popular-artist-title{
@@ -364,7 +344,6 @@ nav{
     align-items: center;
     justify-content: space-between;
     position: sticky;
-    width: 100%;
 }
 
 /* MEDIA ARTWORK*/
@@ -479,10 +458,27 @@ nav{
 .repeat:hover{
     color: green;
 }
-.repeat:active{
-    color: yellow;
-    transform: scale(1.1);
+/*================================================================
+ PLAY ICON FOR THE WHOLE CARDS
+ ===================================================================*/
+.play-icon{
+    font-size: 3rem;
+    background-color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    color: red;
+    position: absolute;
+    transform:translate(114px, -54px);
 }
+.play-icon:hover{
+    background-color: white;
+    color: rgb(7, 116, 7);
+    font-weight: 700;
+}
+
 .progress-bar{
     display: flex;
     align-items: center;
@@ -552,7 +548,7 @@ nav{
 
 
 /*=================================================
-  MEDIA QUERIES FOR NAVIGATION BAR ON MOBILE DEVICES
+  MEDIA QUERIES FOR NAVIGATION BAR
 =================================================*/
 @media all and (max-width: 600px){
 
@@ -573,6 +569,22 @@ nav{
     .install{
         display: none;
     }
+    .play-icon{
+        color: yellow;
+        background-color: green;
+        position: relative;
+        font-size: 2rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        justify-content: center;
+        transform:translate(4px, -30px);
+
+    }
+    .play-icon:hover{
+    background-color: white;
+    color: rgb(6, 56, 6);
+    font-weight: 700;
+}
 
 /*=================================================
    MAIN SECTION
@@ -662,96 +674,5 @@ nav{
     .media-control{
         display: none;
     }
-}
-
-/*=================================================
-  MEDIA QUERIES FOR NAVIGATION BAR ON TABLET DEVICES
-=================================================*/
-@media all and (min-width: 600px) and (max-width: 1430px) {
-    /* NAIVIGATION BAR*/
-    nav{
-        width: 100%;
-        background-color: green;
-    }
-    .logo:hover{
-        color: white;
-    }
-    .nav-list:hover{
-        color: white;
-    }
-    .install:hover{
-        color: white;
-    }
-    .signup:hover{
-        color: white;
-    }
-    .home{
-        background-color: green;
-    }
-    .login:hover{
-        background-color: black;
-        color: white;
-    }
-
-    /* LEFT MAIN SECTION*/
-    .left-main-section{
-        align-items: center;
-    }
-    .library{
-        display: flex;
-        font-size: 0.8rem;
-        align-items: center;
-        gap: 20px;
-    }
-    .containers{
-        justify-content: center;
-        height: 20%;
-    }
-    containers h4, p, .create-playlist{
-        align-items: center;
-    }
-    .language-btn{
-        align-items: center;
-        justify-content: center;
-    }
     
-    /* RIGHT MAIN SECTION*/
-    .trending-cards{
-        flex-wrap: wrap;
-        align-items: center;
-        display: flex;
-    }
-    .popular-artist{
-        flex-wrap: wrap;
-        align-items: center;
-    }
-    .trending-albums{
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
-    /* MUSIC SECTION*/
-    .music-section{
-        height: 8rem;
-        width: 100%;
-        position: sticky;
-        background-color: green;
-    }
-    .play{
-        background-color:green;
-    }
-    .play:hover{
-        color: green;
-        background-color:black;
-    }
-    .repeat{
-        background-color: green;
-    }
-    .repeat:hover{
-        background-color: green;
-        color: black;
-    }
-    
-
-
 }
