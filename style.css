@@ -469,13 +469,13 @@ nav{
     display: flex;
     justify-content: center;
     border-radius: 50%;
-    color: red;
+    color: green;
     position: absolute;
     transform:translate(114px, -54px);
 }
 .play-icon:hover{
-    background-color: white;
-    color: rgb(7, 116, 7);
+    background-color: green;
+    color: white;
     font-weight: 700;
 }
 
