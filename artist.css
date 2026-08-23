@@ -1,0 +1,63 @@
+/* GENERAL STYLING*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: black;
+    color: yellow;
+}
+
+/* NAVIGATION BAR STYLING*/
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    background-color: black;
+}
+.main{
+    display: flex;
+}
+
+/* LIBRARY PART*/
+.library-section{
+    height: 85vh;
+    width: 20vw;
+    background-color: grey;
+    margin: 4px;
+}
+.library-btns{
+    display: flex;
+    justify-content: space-between;
+}
+.createandmax{
+    display: flex;
+}
+.library-search-btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ARTIST PART*/
+.artist-section{
+    height: 85vh;
+    width: 80vw;
+
+    background-image: url('imgs/landscape-album-cover.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 85vh;
+}
+
+/* MEDIA PLAYER PART*/
+.media-player-section{
+    position: fixed;
+    height: 15vh;
+    width: 99vw;
+}
+.artist-title{
+    color: white;
+}
