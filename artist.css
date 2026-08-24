@@ -6,7 +6,7 @@
 }
 body{
     background-color: black;
-    color: yellow;
+    color: white;
 }
 
 /* NAVIGATION BAR STYLING*/
@@ -17,6 +17,15 @@ body{
     color: white;
     background-color: black;
 }
+.left-part{
+    display: flex;
+}
+.center-part{
+    display: flex;
+}
+.right-part{
+    display: flex;
+}
 .main{
     display: flex;
 }
@@ -25,7 +34,7 @@ body{
 .library-section{
     height: 85vh;
     width: 20vw;
-    background-color: grey;
+    background-image: linear-gradient(rgb(1, 51, 66), black 70%);
     margin: 4px;
 }
 .library-btns{
@@ -52,6 +61,7 @@ body{
     position: relative;
 }
 .artist-title{
+    color: white;
     font-weight: 600;
     font-size: 3rem;
     transform:translate(20px, -650px);
@@ -72,7 +82,7 @@ body{
     height: 24.6vw;
     position: relative;
     transform:translate(0px, -550px);
-    background-image: linear-gradient(rgb(1, 51, 66), black);
+    background-image: linear-gradient(rgb(1, 51, 66), black 40%);
 
 
 }
