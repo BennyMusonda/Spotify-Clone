@@ -44,12 +44,37 @@ body{
 .artist-section{
     height: 85vh;
     width: 80vw;
-
-    background-image: url('imgs/landscape-album-cover.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+}
+.artist-section img{
+    width: 79vw;
     height: 85vh;
+    object-fit: cover;
+    position: relative;
+}
+.artist-title{
+    font-weight: 600;
+    font-size: 3rem;
+    transform:translate(20px, -650px);
+}
+.artist-description{
+    font-size: 0.8rem;
+    font-weight: 600;
+    transform:translate(20px, -650px);
+}
+.artist-subdescription{
+    padding-top: 4px;
+     font-weight: 600;
+    font-size: 0.7rem;
+    transform:translate(20px, -650px);
+}
+.music-section{
+    width: 79vw;
+    height: 24.6vw;
+    position: relative;
+    transform:translate(0px, -550px);
+    background-image: linear-gradient(rgb(1, 51, 66), black);
+
+
 }
 
 /* MEDIA PLAYER PART*/
