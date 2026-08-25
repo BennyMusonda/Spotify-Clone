@@ -11,20 +11,114 @@ body{
 
 /* NAVIGATION BAR STYLING*/
 .nav{
+    height: 2vh;
     display: flex;
     justify-content: space-between;
     padding: 20px;
     color: white;
     background-color: black;
+    position: sticky;
 }
 .left-part{
     display: flex;
 }
+.logo{ 
+    color: grey;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+.logo:hover{
+    color: green;
+}
+
 .center-part{
     display: flex;
+    align-items: center;
+    gap: 4px;
 }
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(37, 37, 37);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    color: grey;
+    font-size: 24px;
+    
+}
+.home:hover{
+    color: green;
+    transform: translate(0.2);
+}
+.input-box{
+    height: 45px;
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    padding-left: 47px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    
+}
+.search-icon{
+    position: relative;
+    color: grey;
+    transform:translate(45px);
+}
+.search-icon:hover{
+    color: white;
+}
+.folder{
+    display: flex;
+    align-items: center;
+    color: grey;
+    transform:translate(-50px);
+    border-left: 2px solid grey;
+    padding: 6px;
+    height: 6px;
+    position: relative;
+}
+.folder:hover{
+    color: white;
+}
+
+
 .right-part{
     display: flex;
+    gap: 8px;
+    font-weight: 600;
+    color: grey;
+    cursor: pointer;
+}
+.nav-list:hover{
+    color: green;
+}
+.install:hover{
+    color: green;
+}
+.signup:hover{
+    color: green;
+}
+.login{
+    font-weight: 600;
+    background-color: grey;
+    border-radius: 8px;
+    width: 3rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+.login:hover{
+    color: white;
+    background-color: green;
 }
 .main{
     display: flex;
@@ -34,7 +128,7 @@ body{
 .library-section{
     height: 85vh;
     width: 20vw;
-    background-image: linear-gradient(rgb(1, 51, 66), black 70%);
+    background-color: rgb(37, 37, 37);
     margin: 4px;
 }
 .library-btns{
