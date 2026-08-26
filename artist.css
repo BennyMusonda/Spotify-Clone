@@ -316,11 +316,36 @@ body{
 .popular-section h4{
     padding: 8px;
 }
-.popular-tracks{}
+.popular-cards{
+    display: flex;
+    justify-content: space-between;
+}
+.track01{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+}
 .track01 img{
-    width: 4rem;
-    height: 4.2rem;
+    width: 1.9rem;
+    height: 1.9rem;
     object-fit: cover;
+}
+.track01-description{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+.track01-description:hover{
+    color: black;
+}
+.track01:hover{
+    background-color: green;
+}
+.artist-title{
+    color: white;
 }
 
 /* MEDIA PLAYER PART*/
@@ -329,6 +354,4 @@ body{
     height: 15vh;
     width: 99vw;
 }
-.artist-title{
-    color: white;
-}
+
