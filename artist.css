@@ -17,18 +17,19 @@ body{
     padding: 20px;
     color: white;
     background-color: black;
-    position: sticky;
+    
 }
 .left-part{
     display: flex;
 }
-.logo{ 
+.logo a{ 
     color: grey;
     display: flex;
     align-items: center;
     font-size: 25px;
+    text-decoration: none;
 }
-.logo:hover{
+.logo a:hover{
     color: green;
 }
 
@@ -225,8 +226,6 @@ body{
     padding: 4px;
 }
 
-
-
 /* ARTIST PART*/
 .artist-section{
     height: 85vh;
@@ -389,15 +388,11 @@ body{
 .artwork-description:hover{
     color: green;
 }
-.controls{
-}
 .music-buttons{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-}
-.progress-bar{
 }
 .progress{
     accent-color: green;
@@ -419,8 +414,9 @@ body{
     color: green;
 }
 .play-btn{
-    font-size: 23px;
+    font-size: 24px;
     color: white;
+    transform: 0.2s;
 }
 .play-btn:hover{
     color: green;
@@ -443,5 +439,41 @@ body{
     color: grey;
 }
 .loop-btn:hover{
+    color: green;
+}
+
+
+.media-controls{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.mic-icon{
+    color: grey;
+}
+.computer-icon{
+    color: grey;
+}
+.volume-icon{
+    color: grey;
+}
+.expand-icon{
+    color: grey;
+}
+.volume-bar{
+    accent-color: green;
+    width: 5rem;
+    height: 3px;
+}
+.mic-icon:hover{
+    color: green;
+}
+.computer-icon:hover{
+    color: green;
+}
+.volume-icon:hover{
+    color: green;
+}
+.maximise-icon:hover{
     color: green;
 }
