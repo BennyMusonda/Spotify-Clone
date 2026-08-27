@@ -321,6 +321,7 @@ body{
     justify-content: space-between;
 }
 .track01{
+    border-radius: 10px;
     display: flex;
     align-items: center;
     padding: 8px;
@@ -361,7 +362,86 @@ body{
 .artwork img{
     width: 3rem;
     height: 3rem;
+    padding: 4px;
 }
 .artwork{
     display: flex;
+    align-items: center;
+    padding: 4px;
+}
+.artwork-info{
+    cursor: pointer;
+    padding-left: 8px;
+}
+.artwork-title{
+    font-weight: 600;
+    font-size: 15px;
+}
+.artwork-title:hover{
+    color: green;
+}
+.artwork-description{
+    color: grey;
+    font-size: 13px;
+    font-weight: 500;
+    padding-top: 4px;
+}
+.artwork-description:hover{
+    color: green;
+}
+.controls{
+}
+.music-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.progress-bar{
+}
+.progress{
+    accent-color: green;
+    width: 30rem;
+    height: 3px;
+}
+.shuffle-btn{
+    font-size: 18px;
+    color: grey;
+}
+.shuffle-btn:hover{
+    color: green;
+}
+.previous-btn{
+    font-size: 18px;
+    color: grey;
+}
+.previous-btn:hover{
+    color: green;
+}
+.play-btn{
+    font-size: 23px;
+    color: white;
+}
+.play-btn:hover{
+    color: green;
+    background-color: white;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    align-items: center;
+    display: flex;
+}
+.next-btn{
+    font-size: 18px;
+    color: grey;
+}
+.next-btn:hover{
+    color: green;
+}
+.loop-btn{
+    font-size: 18px;
+    color: grey;
+}
+.loop-btn:hover{
+    color: green;
 }
