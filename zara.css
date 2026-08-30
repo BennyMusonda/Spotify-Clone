@@ -128,8 +128,10 @@ body{
 
 /* LIBRARY PART*/
 .library-section{
-    height: auto;
-    width: 20vw;
+    height: 100%;
+    position: sticky;
+    overflow: hidden;
+    width: 15vw;
      background-image: linear-gradient(rgb(82, 80, 80), black 95%);
     margin: 4px;
 }
@@ -210,6 +212,7 @@ body{
 }
 .album-1{
     display: flex;
+    border-radius: 8px;
 }
 .album-1:hover{
     background-color: grey;
@@ -230,7 +233,7 @@ body{
 /* ARTIST PART*/
 .artist-section{
     height: 85vh;
-    width: 80vw;
+    width: 85%;
 }
 .artist-section img{
     width: 79vw;
@@ -310,10 +313,7 @@ body{
 .option-button:hover{
     color: grey;
 }
-.popular-section{
-    width: 100%;
-    height: auto;
-}
+
 .popular-section h4{
     padding: 8px;
 }
@@ -351,130 +351,220 @@ body{
 }
 
 /* MEDIA PLAYER PART*/
-
-.artist-art{
+.music-sections{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(17, 17, 17);
-    position: fixed;
-}
-.artwork img{
-    width: 3rem;
-    height: 3rem;
-    padding: 4px;
-}
-.artwork{
+    background-color: rgb(20, 20, 20);
+    color: white;
     display: flex;
     align-items: center;
-    padding: 4px;
+    justify-content: space-between;
+    position: fixed;
 }
-.artwork-info{
-    cursor: pointer;
-    padding-left: 8px;
+/* MEDIA ARTWORK*/
+.media-artwork{
+    display: flex;
+    align-items: center;
+}
+.media-artwork img{
+    object-fit: cover;
+    margin: 10px;
+    width: 4rem;
+    height: 4rem;
+    align-items: center;
 }
 .artwork-title{
-    font-weight: 600;
-    font-size: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 2px;
+    transition: 0.2s;
 }
 .artwork-title:hover{
     color: green;
 }
 .artwork-description{
-    color: grey;
-    font-size: 13px;
+    color: #bbb;
+    font-size: 12px;
     font-weight: 500;
-    padding-top: 4px;
 }
-.artwork-description:hover{
+.artwork-cancel{
+    color: #bbb;
+    font-weight: 500;
+    margin: 20px;
+    transition: 0.2s;
+}
+.artwork-cancel:hover{
     color: green;
 }
-.music-buttons{
-    display: flex;
-    align-items: center;
+.artwork-add{
+    color: #bbb;
+    font-weight: 500;
+    transition: 0.2s;
+}
+.artwork-add:hover{
+    color: green;
+}
+/* MEDIA PLAYER*/
+.player-icons{
     justify-content: center;
-    gap: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
-.progress{
-    accent-color: green;
-    width: 30rem;
-    height: 3px;
-}
-.shuffle-btn{
+.shuffle{
+    color: #8b8b8b;
     font-size: 18px;
-    color: grey;
+    transition: 0.2s;
 }
-.shuffle-btn:hover{
-    color: green;
+.shuffle:hover{
+     color: green;
 }
-.previous-btn{
+.back{
+    color: #8b8b8b;
     font-size: 18px;
-    color: grey;
+    transition: 0.2s;
 }
-.previous-btn:hover{
-    color: green;
+.back:hover{
+     color: green;
 }
-.play-btn{
-    font-size: 24px;
+.play{
+    background-color: green;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
     color: white;
-    transform: 0.2s;
-}
-.play-btn:hover{
-    color: green;
-    background-color: white;
     border-radius: 50%;
-    width: 17px;
-    height: 17px;
-    align-items: center;
-    display: flex;
+    font-size: 40px; 
+    transition: 0.2s;
 }
-.next-btn{
+.play:hover{
+    color:green;
+    background-color: white;
+}
+.pause{
+    display: none;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    font-size: 40px;
+    transition: 0.2s;
+}
+.pause:hover{
+    color:green;
+    background-color: black;
+}
+.next{
+    color: #8b8b8b;
     font-size: 18px;
-    color: grey;
+    transition: 0.2s;
 }
-.next-btn:hover{
-    color: green;
+.next:hover{
+     color: green;
 }
-.loop-btn{
+.repeat{
+    background-color: black;
+    border: none;
+    color: #8b8b8b;
     font-size: 18px;
-    color: grey;
+    transition: 0.2s;
+    cursor: pointer;
 }
-.loop-btn:hover{
+.repeat:hover{
     color: green;
 }
 
-
-.media-controls{
-    display: flex;
-    gap: 5px;
+/*================================================================
+ PLAY ICON FOR THE WHOLE CARDS
+ ===================================================================*/
+.play-icon{
+    font-size: 3rem;
     align-items: center;
+    background-color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    color: green;
+    position: absolute;
+    transform:translate(114px, -54px);
 }
-.mic-icon{
-    color: grey;
+.play-icon {
+    color: green;
 }
-.computer-icon{
-    color: grey;
+.play-icon:hover{
+    border-radius: 50%;
+    background-color: green;
+    color: white;
+    font-weight: 700;
 }
-.volume-icon{
-    color: grey;
-}
-.expand-icon{
-    color: grey;
-}
-.volume-bar{
+
+.progress-bar{
+    display: flex;
+    align-items: center;
+    width: 40rem;
+    margin: 7px;
     accent-color: green;
-    width: 5rem;
-    height: 3px;
+    height: 4px;
+    border-radius: 5rem;
 }
-.mic-icon:hover{
+.progressbar-time{
+    display: flex;
+    align-items: center;
+}
+.duration{
+    color: green;
+    display: flex;
+    align-items: center;
+}
+
+/* MEDIA CONTROL*/
+.control-icons{
+    display: flex;
+    gap: 12px;
+    color: grey;
+}
+.media-volume{
+    height: 4px;
+    accent-color: green;
+}
+.media-mic{
+    transition: 0.2s;
+}
+.media-mic:hover{
     color: green;
 }
-.computer-icon:hover{
+.media-library{
+    transition: 0.2s;
+}
+.media-library:hover{
     color: green;
 }
-.volume-icon:hover{
+.media-connect{
+    transition: 0.2s;
+}
+.media-connect:hover{
     color: green;
 }
-.maximise-icon:hover{
+.media-volume{
+    transition: 0.2s;
+}
+.media-volume:hover{
+    color: green;
+}
+.media-miniplayer{
+    transition: 0.2s;
+}
+.media-miniplayer:hover{
+    color: green;
+}
+.media-fullscreen{
+    transition: 0.2s;
+}
+.media-fullscreen:hover{
     color: green;
 }
