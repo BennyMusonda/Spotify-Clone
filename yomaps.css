@@ -1,0 +1,570 @@
+/* GENERAL STYLING*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+}
+
+/* NAVIGATION BAR STYLING*/
+.nav{
+    height: 2vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    background-color: black;
+    
+}
+.left-part{
+    display: flex;
+}
+.logo a{ 
+    color: grey;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    text-decoration: none;
+}
+.logo a:hover{
+    color: green;
+}
+
+.center-part{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.home a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(37, 37, 37);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    color: grey;
+    font-size: 24px;
+    text-decoration: none;
+    
+}
+.home a:hover{
+    color: green;
+    transform: translate(0.2);
+}
+.input-box{
+    height: 45px;
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    padding-left: 47px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    
+}
+.search-icon{
+    position: relative;
+    color: grey;
+    transform:translate(45px);
+}
+.search-icon:hover{
+    color: white;
+}
+.folder{
+    display: flex;
+    align-items: center;
+    color: grey;
+    transform:translate(-50px);
+    border-left: 2px solid grey;
+    padding: 6px;
+    height: 6px;
+    position: relative;
+}
+.folder:hover{
+    color: white;
+}
+
+
+.right-part{
+    display: flex;
+    gap: 8px;
+    font-weight: 600;
+    color: grey;
+    cursor: pointer;
+}
+.nav-list:hover{
+    color: green;
+}
+.install:hover{
+    color: green;
+}
+.signup:hover{
+    color: green;
+}
+.login{
+    font-weight: 600;
+    background-color: grey;
+    border-radius: 8px;
+    width: 3rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+.login:hover{
+    color: white;
+    background-color: green;
+}
+.main{
+    display: flex;
+}
+
+/* LIBRARY PART*/
+.library-section{
+    height: 100%;
+    position: sticky;
+    overflow: hidden;
+    width: 15vw;
+     background-image: linear-gradient(rgb(82, 80, 80), black 95%);
+    margin: 4px;
+}
+.library-btns{
+    display: flex;
+    justify-content: space-between;
+}
+.library-title{
+    padding: 8px;
+}
+.createandmax{
+    display: flex;
+    padding: 8px;
+    gap: 3rem;
+}
+.library-search-btns{
+    display: flex;
+    justify-content: space-between;
+}
+.library-create-btn{
+    background-color: rgb(56, 56, 56);
+    width: 5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-weight: 600;
+}
+.library-create-btn:hover{
+    cursor: pointer;
+    color: white;
+    background-color: green;
+}
+.library-maximise-btn{
+    color: grey;
+    cursor: pointer;
+}
+.library-maximise-btn:hover{
+    color: green;
+}
+.library-title{
+    color: grey;
+    display: flex;
+    gap: 10px;
+}
+.library-topic{
+    font-weight: 600;
+    color: white;
+}
+.library-search{
+    color: grey;
+    padding: 4px;
+}
+.library-recents{
+    color: grey;
+    padding: 4px;
+    font-weight: 600;
+}
+
+.liked-songs{
+    display: flex;
+    align-items: center;
+    background-color: rgb(37, 37, 37);
+}
+.liked-songs img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 8px;
+    padding: 4px;
+}
+.liked-songs-description{
+    padding-left: 4px;
+    font-weight: 600;
+}
+.liked-songs:hover{
+    background-color: grey;
+}
+.album-1{
+    display: flex;
+    border-radius: 8px;
+}
+.album-1:hover{
+    background-color: grey;
+}
+.album1-description{
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding-left: 4px;
+}
+.album-1 img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+/* ARTIST PART*/
+.artist-section{
+    height: 85vh;
+    width: 85%;
+}
+.artist-section img{
+    width: 79vw;
+    height: 85vh;
+    object-fit: cover;
+    position: relative;
+}
+.artist-title{
+    color: white;
+    font-weight: 800;
+    font-size: 3rem;
+    transform:translate(20px, -650px);
+}
+.artist-description{
+    font-size: 0.8rem;
+    font-weight: 600;
+    transform:translate(20px, -650px);
+}
+.artist-subdescription{
+    padding-top: 4px;
+     font-weight: 600;
+    font-size: 0.7rem;
+    transform:translate(20px, -650px);
+}
+.music-section{
+    width: 79vw;
+    height: auto;
+    position: relative;
+    transform:translate(0px, -550px);
+    background-image: linear-gradient(rgb(4, 180, 250), black 40%);
+}
+.player-display{
+    display: flex;
+    justify-content: flex-start;
+    padding: 12px;
+    gap: 12px;
+}
+.play-button{
+    color: green;
+    background-color: white;
+    font-size: 40px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;    
+}
+.play-button:hover{
+    color: white;
+    background: green;
+}
+.shuffle-button{
+    color: white;
+    font-size: 1.2rem;
+}
+.shuffle-button:hover{
+    color: grey;
+}
+.following-button{
+    background-color: rgba(128, 128, 128, 0);
+    border: 1px solid white;
+    color: white;
+    font-weight: 600;
+    font-size: 10px;
+    height: 1.5rem;
+    width: 3.5rem;
+    border-radius: 20px;
+}
+.following-button:hover{
+    color: grey;
+    border: 1px solid grey;
+}
+.option-button{
+    color: white;
+}
+.option-button:hover{
+    color: grey;
+}
+
+.popular-section h4{
+    padding: 8px;
+}
+.popular-cards{
+    display: flex;
+    justify-content: space-between;
+}
+.track01{
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+}
+.track01 img{
+    width: 1.9rem;
+    height: 1.9rem;
+    object-fit: cover;
+}
+.track01-description{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+.track01-description:hover{
+    color: black;
+}
+.track01:hover{
+    background-color: green;
+}
+.artist-title{
+    color: white;
+}
+
+/* MEDIA PLAYER PART*/
+.music-sections{
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+}
+/* MEDIA ARTWORK*/
+.media-artwork{
+    display: flex;
+    align-items: center;
+}
+.media-artwork img{
+    object-fit: cover;
+    margin: 10px;
+    width: 4rem;
+    height: 4rem;
+    align-items: center;
+}
+.artwork-title{
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 2px;
+    transition: 0.2s;
+}
+.artwork-title:hover{
+    color: green;
+}
+.artwork-description{
+    color: #bbb;
+    font-size: 12px;
+    font-weight: 500;
+}
+.artwork-cancel{
+    color: #bbb;
+    font-weight: 500;
+    margin: 20px;
+    transition: 0.2s;
+}
+.artwork-cancel:hover{
+    color: green;
+}
+.artwork-add{
+    color: #bbb;
+    font-weight: 500;
+    transition: 0.2s;
+}
+.artwork-add:hover{
+    color: green;
+}
+/* MEDIA PLAYER*/
+.player-icons{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.shuffle{
+    color: #8b8b8b;
+    font-size: 18px;
+    transition: 0.2s;
+}
+.shuffle:hover{
+     color: green;
+}
+.back{
+    color: #8b8b8b;
+    font-size: 18px;
+    transition: 0.2s;
+}
+.back:hover{
+     color: green;
+}
+.play{
+    background-color: green;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    font-size: 40px; 
+    transition: 0.2s;
+}
+.play:hover{
+    color:green;
+    background-color: white;
+}
+.pause{
+    display: none;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    font-size: 40px;
+    transition: 0.2s;
+}
+.pause:hover{
+    color:green;
+    background-color: black;
+}
+.next{
+    color: #8b8b8b;
+    font-size: 18px;
+    transition: 0.2s;
+}
+.next:hover{
+     color: green;
+}
+.repeat{
+    background-color: black;
+    border: none;
+    color: #8b8b8b;
+    font-size: 18px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.repeat:hover{
+    color: green;
+}
+
+/*================================================================
+ PLAY ICON FOR THE WHOLE CARDS
+ ===================================================================*/
+.play-icon{
+    font-size: 3rem;
+    align-items: center;
+    background-color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    color: green;
+    position: absolute;
+    transform:translate(114px, -54px);
+}
+.play-icon {
+    color: green;
+}
+.play-icon:hover{
+    border-radius: 50%;
+    background-color: green;
+    color: white;
+    font-weight: 700;
+}
+
+.progress-bar{
+    display: flex;
+    align-items: center;
+    width: 40rem;
+    margin: 7px;
+    accent-color: green;
+    height: 4px;
+    border-radius: 5rem;
+}
+.progressbar-time{
+    display: flex;
+    align-items: center;
+}
+.duration{
+    color: green;
+    display: flex;
+    align-items: center;
+}
+
+/* MEDIA CONTROL*/
+.control-icons{
+    display: flex;
+    gap: 12px;
+    color: grey;
+}
+.media-volume{
+    height: 4px;
+    accent-color: green;
+}
+.media-mic{
+    transition: 0.2s;
+}
+.media-mic:hover{
+    color: green;
+}
+.media-library{
+    transition: 0.2s;
+}
+.media-library:hover{
+    color: green;
+}
+.media-connect{
+    transition: 0.2s;
+}
+.media-connect:hover{
+    color: green;
+}
+.media-volume{
+    transition: 0.2s;
+}
+.media-volume:hover{
+    color: green;
+}
+.media-miniplayer{
+    transition: 0.2s;
+}
+.media-miniplayer:hover{
+    color: green;
+}
+.media-fullscreen{
+    transition: 0.2s;
+}
+.media-fullscreen:hover{
+    color: green;
+}
