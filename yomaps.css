@@ -263,7 +263,7 @@ body{
     height: auto;
     position: relative;
     transform:translate(0px, -550px);
-    background-image: linear-gradient(rgb(4, 180, 250), black 40%);
+    background-image: linear-gradient(rgb(238, 145, 222), black 40%);
 }
 .player-display{
     display: flex;
@@ -568,3 +568,92 @@ body{
 .media-fullscreen:hover{
     color: green;
 }
+
+/* @MEDIA QUERIES*/
+@media all and (max-width:600px){
+    /* GENERAL SETTINGS*/
+
+    /* NAVIGATION BAR*/
+    .nav{
+        justify-content: space-between;
+        width: 100%;
+        background-color: black;
+    }
+
+    .center-part{
+        display: none;
+    }
+    .right-part{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        margin-right: 5rem;
+    }
+    .login{
+        display: none;
+    }
+
+    /* LIBRARY PART*/
+    .library-section{
+        width: 10%;
+        height: auto;
+        overflow: hidden;
+    }
+    .library-btns{
+        display: none;
+    }
+    .library-search-btns{
+        display: none;
+    }
+    .liked-songs-description{
+        display: none;
+    }
+    .liked-songs img{
+        width: 3rem;
+        height: 3rem;
+    }
+    .album-1 img{
+        width: 3rem;
+        height: 3rem;
+    }
+    .album1-description{
+        display: none;
+    }
+
+    /* ARTIST PART*/
+    .artist-section{
+        width: 90%;
+        justify-content: center;
+    }
+
+    /* MUSIC SECTION*/
+    .music-sections{
+        width: 100%;
+        height: 8%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* MEDIA PLAYER*/
+    .media-player{
+
+        justify-content: center;
+    }
+    .progress-bar{
+        width: 25rem;
+    }
+
+    .media-artwork{
+        display: none;
+    }
+
+    /* MEDIA CONTROL*/
+    .media-control{
+        display: none;
+    }
+
+}
+
+
