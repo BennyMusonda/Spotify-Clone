@@ -263,7 +263,7 @@ body{
     height: auto;
     position: relative;
     transform:translate(0px, -550px);
-    background-image: linear-gradient(rgb(238, 145, 222), black 40%);
+    background-image: linear-gradient(rgba(238, 145, 222, 0.329), black 40%);
 }
 .player-display{
     display: flex;
