@@ -134,7 +134,6 @@ nav{
     display: flex;
     background-color: black;
     gap: 0.3rem;
-    min-height: 85vh;
     margin-top: 0.1%;
  }
 
@@ -339,11 +338,12 @@ nav{
 
 /* PLAYER SECTION*/
 .music-section{
+    width: 100%;
+    background-color: rgb(20, 20, 20);
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
 }
 
 /* MEDIA ARTWORK*/
@@ -415,16 +415,21 @@ nav{
      color: green;
 }
 .play{
-    background-color: black;
+    background-color: green;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     color: white;
     border-radius: 50%;
-    font-size: 40px;
+    font-size: 40px; 
     transition: 0.2s;
 }
 .play:hover{
     color:green;
-    background-color: black;
+    background-color: white;
 }
 .pause{
     display: none;
@@ -463,6 +468,7 @@ nav{
  ===================================================================*/
 .play-icon{
     font-size: 3rem;
+    align-items: center;
     background-color: white;
     width: 2.5rem;
     height: 2.5rem;
@@ -473,7 +479,11 @@ nav{
     position: absolute;
     transform:translate(114px, -54px);
 }
+.play-icon {
+    color: green;
+}
 .play-icon:hover{
+    border-radius: 50%;
     background-color: green;
     color: white;
     font-weight: 700;
