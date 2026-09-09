@@ -77,3 +77,39 @@ volumeSlider.addEventListener('input', (event) => {
   }
 });
 
+
+//SEARCH FUNCTIONALITY
+document.addEventListener('DOMContentLoaded', () => {
+  const searchForm = document.querySelector('nav form');
+  const searchInput = document.querySelector('.input-box');
+
+  // Collect all searchable card elements across all sections
+  const searchableCards = document.querySelectorAll(
+    '.trending-cards .cards, .popular-cards, .trending-albums-cards'
+  );
+
+  // Function to filter elements based on user query
+  function performSearch() {
+    const query = searchInput.value.toLowerCase().trim();
+
+    searchableCards.forEach((card) => {
+      // Gets all text content inside the card (artist names, song titles, album names)
+      const textContent = card.textContent.toLowerCase();
+
+      if (textContent.includes(query)) {
+        card.style.display = ''; // Show card
+      } else {
+        card.style.display = 'none'; // Hide card
+      }
+    });
+  }
+
+  // 1. Live filtering as the user types or deletes text
+  searchInput.addEventListener('input', performSearch);
+
+  // 2. Filter when pressing "Enter" (submitting the search form)
+  searchForm.addEventListener('submit', (e) => {
+    e.preventDefault(); // Prevents page refresh
+    performSearch();
+  });
+});
