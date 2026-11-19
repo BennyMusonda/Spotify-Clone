@@ -1,322 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sporty</title>
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav>
-        <!-- LEFT SIDE OF THE NAVIGATION BAR-->
-         <div class="logo"><i class="fa-brands fa-spotify"></i> </div>
-
-        <!-- CENTER SIDE OF THE NAVIGATION BAR-->
-        <div class="left-side-nav"> 
-            <div class="home"><i class="fa-solid fa-house"></i> </div>
-           
-            <div class="search-bar">
-             <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-              <input class="input-box" type="text" placeholder="search for a song..">
-               <div class="folder"><i class="fa-solid fa-folder-open"></i></div>
-            </div>  
-
-        </div>
-
-         <!-- RIGHT SIDE OF THE NAVIGATION BAR-->
-        <div class="right-side-nav">
-            <div class="nav-list">Premium</div>
-            <div class="nav-list">Support</div>
-            <div class="nav-list">Download</div>
-            <div class="install"><i class="fa-regular fa-circle-down"></i>  Install App</div>
-            <div class="signup">Sign up</div>
-            <button class="login">Log in</button>
-        </div>
-    </nav>
-    
-    <!-- MAIN SECTION-->
-     <div class="main">
-        <!-- LEFT MAIN SECTION-->
-         <div class="left-main-section">
-            
-            <div class="library">
-               <p>Your Library</p>
-             <div class="create"> create </div> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Sporty
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer>
+        </script>
+    </head>
+    <body data-view="home">
+        <div class="preloader" id="preloader" role="status" aria-label="Loading Spotify" aria-live="polite">
+            <div class="preloader-brand">
+                <i class="fa-brands fa-spotify" aria-hidden="true">
+                </i>
+                <span>
+                    By Benny
+                </span>
             </div>
-
-                <div class="containers">
-                    <h4>Create your first playlist</h4>
-                    <p> It's easy will help you</p>
-                    <button class="create-playlist"> create Playlist</button>
-                </div>
-
-                  <div class="containers">
-                    <h4>Let's find podcast to follow</h4>
-                    <p> will keep you updated on new episodes</p>
-                    <button class="create-playlist"> Browse Podcasts</button>
-                </div>
-
-                <div class="links-container">
-                <div class="library-links">
-                    <div class="links">Legal</div>
-                    <div class="links">Safety & Privacy Center</div>
-                    <div class="links">privacy Policy</div>
-                    <div class="links">Cookies</div>
-                    <div class="links">About Ads</div>
-                    <div class="links">Accessibility</div>
-                </div>
-                <div class="cookies">
-                    <h5>Cookies</h5>
-                </div>
-                <button class="language-btn"><i class="fa-solid fa-earth-americas"></i> English</button>
+            <span class="sr-only">
+                Loading…
+            </span>
+        </div>
+        <nav class="nav">
+            <a class="logo" href="#/" aria-label="Home">
+                <i class="fa-brands fa-spotify">
+                </i>
+            </a>
+            <div class="nav-center">
+                <a class="home-btn" href="#/" aria-label="Home">
+                    <i class="fa-solid fa-house">
+                    </i>
+                </a>
+                <form class="search-bar" id="searchForm" role="search">
+                    <i class="fa-solid fa-magnifying-glass">
+                    </i>
+                    <input class="search-input" id="searchInput" type="text" placeholder="Search for a song.." autocomplete="off" aria-label="Search for a song">
+                    <button class="folder" type="button" aria-label="Browse">
+                        <i class="fa-solid fa-folder-open">
+                        </i>
+                    </button>
+                </form>
             </div>
-
-         </div>
-
-         <!-- RIGHT MAIN SECTION-->
-          <div class="right-main-section">
-            
-            <!-- TRENDING SONGS SECTION-->
-            <h2>Trending Songs</h2>
-            <div class="trending-cards">
-                <div class="cards"> 
-                   <a href="zara.html"><img src="imgs/album-cover.jpg" alt="card1"></a>
-                    <div class="play-icon"> 
-                            <i class="fa-solid fa-circle-play"></i>  
+            <div class="nav-right">
+                <button class="nav-link">
+                    Premium
+                </button>
+                <button class="nav-link">
+                    Support
+                </button>
+                <button class="nav-link">
+                    Download
+                </button>
+                <button class="nav-link install">
+                    <i class="fa-regular fa-circle-down">
+                    </i>
+                    Install App
+                </button>
+                <button class="nav-link">
+                    Sign up
+                </button>
+                <button class="login">
+                    Log in
+                </button>
+            </div>
+        </nav>
+        <div class="main">
+            <aside class="sidebar">
+                <div class="library-header">
+                    <span>
+                        Your Library
+                    </span>
+                    <button class="create-btn">
+                        Create
+                    </button>
+                </div>
+                <div class="library-cta">
+                    <div class="cta-box">
+                        <h4>
+                            Create your first playlist
+                        </h4>
+                        <p>
+                            It's easy, we'll help you
+                        </p>
+                        <button class="cta-btn">
+                            Create playlist
+                        </button>
                     </div>
-                    <h3 class="artist-name"> Zara Larason</h3>
-                    <p>Big Dreams</p>
-                </div>
-
-                 <div class="cards"> 
-                    <a href="yomaps.html"><img src="imgs/background-album-cover1.jpg" alt="card2"></a>
-                    <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
-                    <h3 class="artist-name"> Yo Maps</h3>
-                    <p>Try Again</p>
-                </div>
-                
-                 <div class="cards"> 
-                    <a href="nle.html"><img src="imgs/album-cover2.jpg" alt="card2"></a>
-                    <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
-                    <h3 class="artist-name"> NLE Chopper</h3>
-                    <p>Straight Up</p>
-                </div>
-                
-                 <div class="cards"> 
-                    <a href="bakwesu.html"><img src="imgs/album-cover3.jpg" alt="card2"></a>
-                    <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
-                    <h3 class="artist-name">BA Kwesu</h3>
-                    <p>Traditional Vibes</p>
-                </div>
-           
-                 <div class="cards"> 
-                    <a href="billie.html"><img src="imgs/album-cover4.jpg" alt="card2"></a>
-                    <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
-                    <h3 class="artist-name"> Billie Ilish</h3>
-                    <p>Ocean Eyes</p>
-                </div>
-           
-                 <div class="cards"> 
-                    <a href="ariana.html"><img src="imgs/album-cover5.jpg" alt="card2"></a>
-                    <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
-                    <h3 class="artist-name"> Ariana Grande</h3>
-                    <p>new Chapter</p>
-                </div>
-           
-                 <div class="cards"> 
-                    <a href="theweekend.html"><img src="imgs/album-cover6.jpg" alt="card2"></a>
-                    <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
-                    <h3 class="artist-name"> The Weekend</h3>
-                    <p>After Hours</p>
-                </div>
-                
-                 <div class="cards"> 
-                    <a href="redskin.html"><img src="imgs/album-cover7.jpg" alt="card2"></a>
-                    <div class="play-icon"><i class="fa-solid fa-circle-play"></i></a></div>
-                    <h3 class="artist-name"> Red Skin</h3>
-                    <p>Skeleton Vibes</p>
-                </div>
-            </div>
-
-            <!-- POPULAR ARTIST CONTENT-->
-            
-                <div class="popular-artist-title">
-                    <h2> Popular artists</h2>
-                </div>
-                <div class="popular-artist">
-                <div class="popular-cards">
-                    <img src="imgs/album-cover8.jpg" alt="post-malone" href="artist.html">
-                    <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
-                    <h3 class="album-title"> Post Malone</h3>
-                    <p>Artist</p>
-                </div>
-                <div class="popular-cards">
-                    <img src="imgs/album-cover9.jpg" alt="post-malone" href="artist.html">
-                    <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
-                    <h3 class="album-title"> Yo Maps</h3>
-                    <p>Artist</p>
-                </div>
-                <div class="popular-cards">
-                    <img src="imgs/album-cover10.jpg" alt="post-malone" href="artist.html">
-                    <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
-                    <h3 class="album-title"> Yo Maps</h3>
-                    <p>Artist</p>
-                </div>
-                <div class="popular-cards">
-                    <img src="imgs/album-cover11.jpg" alt="post-malone" href="artist.html">
-                    <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
-                    <h3 class="album-title"> Chile One</h3>
-                    <p>Artist</p>
-                </div>
-                <div class="popular-cards">
-                    <img src="imgs/album-cover12.jpg" alt="post-malone" href="artist.html">
-                    <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
-                    <h3 class="album-title"> Modeccaii</h3>
-                    <p>Artist</p>
-                </div>
-                <div class="popular-cards">
-                    <img src="imgs/album-cover13.jpg" alt="post-malone" href="artist.html">
-                    <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
-                    <h3 class="album-title"> Pink Sweat</h3>
-                    <p>Artist</p>
-                </div>
-                <div class="popular-cards">
-                    <img src="imgs/album-cover14.jpg" alt="post-malone" href="artist.html">
-                    <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
-                    <h3 class="album-title"> Khalid</h3>
-                    <p>Artist</p>
-                </div>
-                <div class="popular-cards">
-                    <img src="imgs/album-cover15.jpg" alt="post-malone" href="artist.html">
-                    <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
-                    <h3 class="album-title"> Diamond </h3>
-                    <p>Artist</p>
-                </div>
-            </div>
-
-            <!-- TRENDING AlBUMS-->
-             <div class="trending-albums-title">
-                <h2>Trending Albums</h2>
-             </div>
-
-             <div class="trending-albums">
-                <div class="trending-albums-cards">
-                    <img src="imgs/albumcover.jpg" alt="album" href="artist.html">
-                    <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
-                    <h3 class="album-title">Alick Nkhata</h3>
-                    <p>Shalapo</p>
-                </div>
-            
-                <div class="trending-albums-cards">
-                    <img src="imgs/albumcover1.jpg" alt="album" href="artist.html">
-                    <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
-                    <h3 class="album-title"> The Call</h3>
-                    <p>Precious</p>
-                </div>
-                 <div class="trending-albums-cards">
-                    <img src="imgs/albumcover2.jpg" alt="album" href="artist.html">
-                    <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
-                    <h3 class="album-title">Daev</h3>
-                    <p>Moon Light</p>
-                </div>
-                 <div class="trending-albums-cards">
-                    <img src="imgs/albumcover3.jpg" alt="album" href="artist.html">
-                    <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
-                    <h3 class="album-title">diana</h3>
-                    <p>Imole</p>
-                </div>
-                 <div class="trending-albums-cards">
-                    <img src="imgs/albumcover4.jpg" alt="album" href="artist.html">
-                    <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
-                    <h3 class="album-title">Jake </h3>
-                    <p>Time Of My Life</p>
-                </div>
-                 <div class="trending-albums-cards">
-                    <img src="imgs/albumcover5.jpg" alt="album" href="artist.html">
-                    <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
-                    <h3 class="album-title">Mino</h3>
-                    <p>Be Fruitful</p>
-                </div>
-                 <div class="trending-albums-cards">
-                    <img src="imgs/albumcover6.jpg" alt="album" href="artist.html">
-                    <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
-                    <h3 class="album-title">Yoleria </h3>
-                    <p>Ellen</p>
-                </div>
-                 <div class="trending-albums-cards">
-                    <img src="imgs/albumcover7.jpg" alt="album" href="artist.html">
-                    <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
-                    <h3 class="album-title">Piramid</h3>
-                    <p>RAinbows</p>
-                </div>
-             </div>
-          </div>
-        </div>
-        
-        <!-- AUDIO FILES-->
-             <div class="audio-files" id="audioFiles">
-                <audio id="audio_1" src="audio/audio_1.mp3"></audio>
-                <audio id="audio2" src="audio/audio_2.mp3"></audio>
-                <audio id="audio3" src="audio/audio_3.mp3"></audio>
-             </div>
-
-        <!-- PLAYER SECTION-->
-         <div class="music-section">  
-            <!-- MEDIA ARTWORK-->
-            <div class="media-artwork">
-                <img src="imgs/playingsong.PNG" alt="playing song">
-                <div class="media-title">
-                    <div class="artwork-title">Nasty C</div>
-                    <div class="artwork-description"> Zulu Man</div>    
-                </div>
-                <div class="artwork-cancel"><i class="fa-solid fa-xmark"></i></div>
-                <div class="artwork-add"><i class="fa-solid fa-circle-plus"></i></div>
-            </div>
-
-            <!-- MEDIA PLAYER-->
-             <div class="media-player">
-                <div class="player-icons">
-                    <div class="shuffle"><i class="fa-solid fa-shuffle"></i></div>
-                    <div class="back"><i class="fa-solid fa-backward-step"></i></div>
-                    <button class="play" id="playBtn" ><i class="fa-solid fa-circle-play" id="playIcon"></i></button>
-                    <button class="pause" id="pauseBtn" ><i class="fa-solid fa-circle-pause"></i></button>
-                    <div class="next"><i class="fa-solid fa-forward-step"></i></div>
-                    <div class="loop"><i class="fa-solid fa-repeat"></i></div>
-                </div>
-                 <div class="progressbar-time">
-                    <time class="current-time" id="currentTime" datetime="PT0S">0:00</time>
-                   <input class="progress-bar" id="progressBar" type="range" min="0" max="100" value="0">
-                   <time class="duration" id="duration" datetime="PT0S">0:00</time>
-                 
-                </div>
-             </div>
-
-             <!-- MEDIA CONTROL-->
-              <div class="media-control">
-                <div class="control-icons">
-                    <div class="media-mic"><i class="fa-brands fa-tencent-weibo"></i></div>
-                    <div class="media-library"><i class="fa-solid fa-layer-group"></i></div>
-                    <div class="media-connect"><i class="fa-solid fa-computer"></i></div>
-                    <div class="media-volume"><i class="fa-solid fa-volume-low"></i>
-                         <input class="media-volume" id="mediaVolume" type="range" min="0" max="100" value="30">
-                        <span id="volumeValue">40</span>
+                    <div class="cta-box">
+                        <h4>
+                            Let's find podcasts to follow
+                        </h4>
+                        <p>
+                            We'll keep you updated on new episodes
+                        </p>
+                        <button class="cta-btn">
+                            Browse podcasts
+                        </button>
                     </div>
-                    <div class="media-miniplayer"><i class="fa-solid fa-picture-in-picture"></i></div>
-                    <div class="media-fullscreen"><i class="fa-solid fa-expand"></i></div>
+                    <div class="sidebar-footer">
+                        <div class="footer-links">
+                            <a href="#/">
+                                Legal
+                            </a>
+                            <a href="#/">
+                                Safety &amp; Privacy Center
+                            </a>
+                            <a href="#/">
+                                Privacy Policy
+                            </a>
+                            <a href="#/">
+                                Cookies
+                            </a>
+                            <a href="#/">
+                                About Ads
+                            </a>
+                            <a href="#/">
+                                Accessibility
+                            </a>
+                        </div>
+                        <button class="language-btn">
+                            <i class="fa-solid fa-earth-americas">
+                            </i>
+                            English
+                        </button>
+                    </div>
                 </div>
-              </div>
-         </div>
-         
-         <script src="script.js" defer></script>
-</body>
+                <ul class="library-list" id="libraryList">
+                </ul>
+            </aside>
+            <div class="content" id="content">
+                <section class="view home-view" id="homeView">
+                    <section class="shelf">
+                        <h2>
+                            Trending Songs
+                        </h2>
+                        <div class="card-row" id="trendingSongs">
+                        </div>
+                    </section>
+                    <section class="shelf">
+                        <h2>
+                            Popular artists
+                        </h2>
+                        <div class="card-row" id="popularArtists">
+                        </div>
+                    </section>
+                    <section class="shelf">
+                        <h2>
+                            Trending Albums
+                        </h2>
+                        <div class="card-row" id="trendingAlbums">
+                        </div>
+                    </section>
+                    <p class="no-results" id="noResults" hidden>
+                        No songs, artists or albums match your search.
+                    </p>
+                </section>
+                <section class="view artist-view" id="artistView" hidden>
+                    <header class="artist-hero">
+                        <img id="artistHero" src="" alt="">
+                        <div class="artist-info">
+                            <h1 id="artistName">
+                            </h1>
+                            <p>
+                                <i class="fa-solid fa-certificate">
+                                </i>
+                                Verified Artist
+                            </p>
+                            <p>
+                                2,000,000 Monthly Streams
+                            </p>
+                        </div>
+                    </header>
+                    <div class="artist-body" id="artistBody">
+                        <div class="artist-actions">
+                            <button class="artist-play" id="artistPlay" aria-label="Play">
+                                <i class="fa-solid fa-play">
+                                </i>
+                            </button>
+                            <button class="icon-btn js-shuffle" aria-label="Shuffle" aria-pressed="false">
+                                <i class="fa-solid fa-shuffle">
+                                </i>
+                            </button>
+                            <button class="following">
+                                Following
+                            </button>
+                            <button class="icon-btn" aria-label="More options">
+                                <i class="fa-solid fa-ellipsis">
+                                </i>
+                            </button>
+                        </div>
+                        <h4>
+                            Popular
+                        </h4>
+                        <ol class="track-list" id="artistTracks">
+                        </ol>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer class="player" aria-label="Music player">
+            <div class="now-playing">
+                <img id="npCover" src="imgs/playingsong.png" alt="Now playing cover">
+                <div class="np-text">
+                    <div class="np-title" id="npTitle">
+                        Zulu Man
+                    </div>
+                    <div class="np-artist" id="npArtist">
+                        Nasty C
+                    </div>
+                </div>
+                <button class="icon-btn" aria-label="Add to library">
+                    <i class="fa-solid fa-circle-plus">
+                    </i>
+                </button>
+            </div>
+            <div class="controls">
+                <div class="buttons">
+                    <button class="icon-btn js-shuffle" aria-label="Shuffle" aria-pressed="false">
+                        <i class="fa-solid fa-shuffle">
+                        </i>
+                    </button>
+                    <button class="icon-btn" id="prevBtn" aria-label="Previous">
+                        <i class="fa-solid fa-backward-step">
+                        </i>
+                    </button>
+                    <button class="play-btn" id="playBtn" aria-label="Play">
+                        <i class="fa-solid fa-circle-play" id="playIcon">
+                        </i>
+                    </button>
+                    <button class="icon-btn" id="nextBtn" aria-label="Next">
+                        <i class="fa-solid fa-forward-step">
+                        </i>
+                    </button>
+                    <button class="icon-btn" id="repeatBtn" data-mode="off" aria-label="Repeat: off">
+                        <i class="fa-solid fa-repeat">
+                        </i>
+                    </button>
+                </div>
+                <div class="timeline">
+                    <span id="currentTime">
+                        0:00
+                    </span>
+                    <input type="range" id="progressBar" min="0" max="100" step="0.1" value="0" aria-label="Seek">
+                    <span class="duration" id="duration">
+                        0:00
+                    </span>
+                </div>
+            </div>
+            <div class="extras">
+                <button class="icon-btn" aria-label="Lyrics">
+                    <i class="fa-brands fa-tencent-weibo">
+                    </i>
+                </button>
+                <button class="icon-btn" aria-label="Queue">
+                    <i class="fa-solid fa-layer-group">
+                    </i>
+                </button>
+                <button class="icon-btn" aria-label="Connect to a device">
+                    <i class="fa-solid fa-computer">
+                    </i>
+                </button>
+                <div class="volume">
+                    <button class="icon-btn" id="muteBtn" aria-label="Mute">
+                        <i class="fa-solid fa-volume-low" id="volumeIcon">
+                        </i>
+                    </button>
+                    <input type="range" id="volumeSlider" min="0" max="100" value="50" aria-label="Volume">
+                    <span id="volumeValue">
+                        50
+                    </span>
+                </div>
+                <button class="icon-btn" aria-label="Mini player">
+                    <i class="fa-solid fa-picture-in-picture">
+                    </i>
+                </button>
+                <button class="icon-btn" id="fullscreenBtn" aria-label="Full screen">
+                    <i class="fa-solid fa-expand">
+                    </i>
+                </button>
+            </div>
+        </footer>
+    </body>
 </html>
